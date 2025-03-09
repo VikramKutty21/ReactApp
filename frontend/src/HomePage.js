@@ -1,39 +1,26 @@
-// HomePage.js
 import React from "react";
 import { Link } from "react-router-dom";
-import "./HomePage.css";
+import "./HomePage.css"; // Import styles
 
 function HomePage() {
   return (
-    <div className="dashboard-container">
-      
-      <header className="dashboard-header">
-      <h1>Transit Simplified</h1>
-      </header>
-      <div className="grid-container">
-        <div className="card">
-          <h2>My Journey</h2>
-          <p>Explore the path I have traveled so far.</p>
-          <Link to="/my-journey"><button>View</button></Link>
-        </div>
+    <div>
+      {/* Navigation Bar */}
+      <nav className="navbar">
+        <h2 className="logo">Transit Simplified</h2>
+        <ul className="nav-links">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/my-journey">My Journey</Link></li>
+          <li><Link to="/journey-experience">Journey Experience</Link></li>
+          <li><Link to="/chatbot">Chatbot</Link></li>
+          <li><Link to="/live-updates">Live Updates</Link></li>
+        </ul>
+      </nav>
 
-        <div className="card">
-          <h2>Journey Experience</h2>
-          <p>Read and share travel experiences.</p>
-          <Link to="/journey-experience"><button>Explore</button></Link>
-        </div>
-
-        <div className="card">
-          <h2>Chatbot</h2>
-          <p>Get instant answers to your queries.</p>
-          <Link to="/chatbot"><button>Chat Now</button></Link>
-        </div>
-
-        <div className="card">
-          <h2>Live Updates</h2>
-          <p>Stay updated with the latest news.</p>
-          <Link to="/live-updates"><button>View Updates</button></Link>
-        </div>
+      {/* Homepage Content */}
+      <div className="homepage-content">
+        <h1>Welcome to Transit Simplified</h1>
+        <p>Your all-in-one platform for hassle-free transportation updates.</p>
       </div>
     </div>
   );
