@@ -14,6 +14,7 @@ function HomePage() {
           <li><Link to="/journey-experience">Journey Experience</Link></li>
           <li><Link to="/chatbot">Chatbot</Link></li>
           <li><Link to="/live-updates">Live Updates</Link></li>
+          <li><Link to="/transport-dashboard">TransportDashboard</Link></li>
         </ul>
       </nav>
 
